@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Init JavaScript</title>
-    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <script src="assets/js/vue.global.js"></script>
   </head>
   <body>
     <!-- <script src="assets/js/main.js">
@@ -17,24 +17,6 @@
     </script> -->
     <h1>Hola JavaScript con un fichero desde la nube</h1>
     <div id="app"></div>
-    <script>
-      const { createApp, ref } = Vue
-      const App = {
-        setup() {
-          const name = ref("Daniel")
-          const count = ref(0)
-          const increment = () => count.value++
-          return { name, increment, count }
-        },
-        template: /* html */ `
-          <div>
-            <p>{{ count }}</p>
-              <button @click="increment">Incrementar</button>
-            <p>{{ name }}</p>
-          </div>
-        `
-      }
-      createApp(App).mount("#app")
-    </script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
