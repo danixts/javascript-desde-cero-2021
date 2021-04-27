@@ -125,12 +125,12 @@ const cad6 = "ABCDEFGHIJK"
 
 console.log("slice [0,3]", cad6.slice(-4, -2))
 
-let carateres = ""
+let caracteres = ""
 for (let i = 32; i < 126; i++) {
-  carateres += String.fromCharCode(i)
+  caracteres += String.fromCharCode(i)
 }
 
-console.log("CARACTERES:", carateres)
+console.log("CARACTERES:", caracteres)
 
 // Array
 
