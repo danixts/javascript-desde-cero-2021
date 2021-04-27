@@ -66,3 +66,25 @@ console.log("OBJETO 2 forma 1", objeto2["juego"]["dificultad"])
 // Forma #2
 console.log("OBJETO 2 forma 2", objeto2.juego.name)
 console.log("OBJETO 2 SIN KEY forma 2", objeto2.juego)
+
+// comparar objetos
+const producto1 = {
+  name: "Uva",
+  price: 10
+}
+
+const producto3 = {
+  name: "Uva",
+  price: 10
+}
+
+const producto2 = {
+  name: "Sandia",
+  price: 10
+}
+
+const producto4 = producto1
+
+console.log("COMPARAR OBJETO", producto1 === producto3)
+console.log("COMPARAR REFERENCIA DEL OBJETO", producto1.name === producto3.name)
+console.log("COMPARAR OBJETO IGUAL", producto4 === producto1)
