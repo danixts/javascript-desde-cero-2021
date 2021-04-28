@@ -120,7 +120,6 @@ console.log("startsWith", "React Vue Svelte Vuex".startsWith("Vue"))
 console.log("endsWith", "React Vue Svelte Vuex".endsWith("Vue"))
 
 // slice
-
 const cad6 = "ABCDEFGHIJK"
 
 console.log("slice [0,3]", cad6.slice(-4, -2))
@@ -131,14 +130,3 @@ for (let i = 32; i < 126; i++) {
 }
 
 console.log("CARACTERES:", caracteres)
-
-// Array
-
-// Forma #0
-// const arr = new Array()
-
-const arr = [1, 2, 3, 4, false, true, 22.33, [2, 3], { name: "Daniel", age: 26 }, null, undefined]
-console.log(arr, typeof arr)
-
-console.log("DEVUELVE ARR INDEX", arr[8])
-console.log("LONGITUD ARR", arr.length)
