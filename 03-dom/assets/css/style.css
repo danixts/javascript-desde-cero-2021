@@ -1,0 +1,41 @@
+:root {
+  --mx: 0;
+  --my: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #000, #1d1d1d);
+}
+
+.background {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.tonica.la/__export/1584386415176/sites/debate/img/2020/03/16/goku_saludando_portada.jpg_463833556.jpg") no-repeat center/cover;
+  clip-path: circle(16% at var(--mx, 50%) var(--my, 50%));
+}
+
+.background:active {
+  transition: clip-path 0.2s;
+  clip-path: circle(50% at var(--mx, 50%) var(--my, 50%));
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  padding: 0 1.75rem;
+  mix-blend-mode: lighten;
+  pointer-events: none;
+}
