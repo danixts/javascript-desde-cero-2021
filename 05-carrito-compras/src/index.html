@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito en JavaScript</title>
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+  </head>
+  <body class="bg-secondary-50">
+    <div class="container"><h1 class="text-primary-400 p-4 font-bold text-3xl text-center">Carrito en javascript</h1></div>
+    <div class="container">
+      <div id="app-product" class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </div>
+    <template id="template-product">
+      <div class="bg-blue-400 rounded-lg group">
+        <img class="w-full mx-auto transform transition-transform group-hover:scale-110" />
+        <div class="bg-gray-300 px-4 py-6 rounded-b-lg">
+          <div class="flex justify-between items-center">
+            <span class="group-hover:text-3xl">COCO</span>
+            <b class="text-2xl group-hover:text-primary-900">20Bs</b>
+          </div>
+          <button class="bg-blue-300 w-full mt-4 py-3 rounded-sm text-blue-900 font-bold text-xl hover:bg-blue-500 hover:text-white transition-all duration-500">Comprar</button>
+        </div>
+      </div>
+    </template>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
