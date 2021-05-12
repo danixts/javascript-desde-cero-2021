@@ -1,0 +1,9 @@
+body {
+  @apply bg-gray-900;
+}
+.btn {
+  @apply bg-yellow-400 text-yellow-900 font-bold shadow-lg px-5 py-2 mx-2 rounded-md mt-4 focus:outline-none focus:ring-1 focus:ring-yellow-400;
+}
+.card {
+  @apply bg-gray-800 shadow-lg rounded-md flex flex-col justify-center items-center;
+}
